@@ -4,10 +4,28 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,179,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 400% 400%;
+    animation: background 2s ease infinite;
+}
+@keyframes background {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: beige;
     display: flex;
     align-items: center;
     justify-content: center;
